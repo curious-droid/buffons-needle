@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buffon's Needle - Pi Estimation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buffon's Needle Pi Estimation</h1>
+        <p>Drop needles and update the Pi estimate in real-time.</p>
+        
+        <div class="result">
+            <h2>Estimated Pi: <span id="pi-estimate">0.00</span></h2>
+        </div>
+        
+        <div class="buttons">
+            <button id="no-hit" class="btn">No Hit</button>
+            <button id="hit" class="btn">Hit</button>
+        </div>
+        
+        <div class="info">
+            <p>Total Drops: <span id="total-drops">0</span></p>
+            <p>Hits: <span id="hits">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
