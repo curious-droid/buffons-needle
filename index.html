@@ -6,6 +6,8 @@
     <title>LAHS Math Club - Buffon's Needle - Pi Estimation</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- MathJax script -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <div class="container">
@@ -16,10 +18,10 @@
         <!-- Embed Tootsie Image -->
         <img src="tootsie.png" alt="Tootsie" class="embedded-image">
 
-        <p>Drop Tootsie Rolls to update the estimate of π in real-time.</p>
+        <p>Drop Tootsie Rolls to update the estimate of \( \pi \) in real-time.</p>
         
         <div class="result">
-            <h2>Estimated value of π: <span id="pi-estimate">0.00</span></h2>
+            <h2>Estimated value of \( \pi \): <span id="pi-estimate">0.00</span></h2>
         </div>
         
         <div class="buttons">
@@ -32,6 +34,31 @@
             <p>Rolls That Hit a Line: <span id="hits">0</span></p>
         </div>
     </div>
+
+    <!-- Explanation Section -->
+    <div class="explanation">
+        <h2>The Math Behind Buffon's Needle</h2>
+        <p>Buffon's needle is a probability method for estimating the value of \( \pi \). The experiment involves dropping a needle of a certain length onto a floor with equally spaced parallel lines. The probability \( P \) that the needle will cross a line is given by:</p>
+        
+        <p class="equation">\( P = \frac{2L}{\pi D} \)</p>
+        
+        <p>where:</p>
+        <ul>
+            <li><strong>L</strong> is the length of the needle.</li>
+            <li><strong>D</strong> is the distance between the lines.</li>
+            <li><strong>\( \pi \)</strong> is the value of Pi we want to estimate.</li>
+        </ul>
+        
+        <p>By rearranging the formula, we can estimate \( \pi \) as:</p>
+        
+        <p class="equation">\( \pi \approx \frac{2L \times \text{Number of drops}}{\text{Number of hits} \times D} \)</p>
+        
+        <!-- <p>For simplicity, in this simulation, we assume \( L = D \), which simplifies the formula to:</p>
+        
+        <p class="equation">\( \pi \approx \frac{2 \times \text{Number of drops}}{\text{Number of hits}} \)</p> -->
+        
+        <p>As you drop more needles, the estimate of \( \pi \) should converge to the actual value.</p>
+    </div>    
 
     <script src="script.js"></script>
 </body>
