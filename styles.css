@@ -16,6 +16,7 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative; /* Make container the reference point */
 }
 
 h1 {
@@ -64,15 +65,16 @@ h2 {
 }
 
 .explanation {
-    clear: both;
     background-color: #f9f9f9;
-    padding: 20px;
+    padding: 30px;
     margin: 30px auto;
     border-radius: 10px;
-    max-width: 600px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     text-align: left;
-    width: 100%; /* Makes sure it occupies the full width of the container */
+    position: absolute;
+    top: 100%; /* Position the explanation just below the container */
+    left: 0;
+    transform: translateY(30px); /* Add some space below the container */
 }
 
 .explanation h2 {
@@ -86,9 +88,10 @@ h2 {
     line-height: 1.6;
 }
 
+/* Style for math equations */
 .explanation .equation {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.2em;
+    font-size: 2em;
     color: #d9534f;
     text-align: center;
     margin: 10px 0;
@@ -98,4 +101,17 @@ h2 {
     list-style-type: disc;
     padding-left: 20px;
     margin: 10px 0;
+}
+.bottom-bar {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #f9f9f9;
+    font-size: 0.8em;
+    color: grey;
+    font-style: italic;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
 }
