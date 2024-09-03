@@ -11,6 +11,8 @@ body {
 }
 
 .container {
+    padding-top: 20px; /* Adjust this value as needed */
+    margin-top: 20px;  /* You can use margin instead of padding if preferred */
     text-align: center;
     background-color: #fff;
     padding: 30px;
@@ -84,7 +86,7 @@ h2 {
     position: absolute;
     top: 100%; /* Position the explanation just below the container */
     left: 0;
-    transform: translateY(200px); /* Add some space below the container */
+    transform: translateY(100px); /* Add some space below the container */
     padding-bottom: 50px; /* Add extra padding at the bottom */
 }
 
