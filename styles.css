@@ -64,6 +64,11 @@ h2 {
     display: block;
 }
 
+.chart-container {
+    margin: 50px auto;
+    max-width: 600px;
+}
+
 .explanation {
     /* text-align: center; */
     background-color: #fff;

@@ -8,6 +8,8 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- MathJax script -->
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.0.2"></script>
 </head>
 <body>
     <div class="container">
@@ -20,6 +22,11 @@
 
         <p>Drop Tootsie Rolls to update the estimate of \( \pi \) in real-time.</p>
         
+        <!-- Chart.js Canvas -->
+        <div class="chart-container">
+            <canvas id="piChart" width="400" height="200"></canvas>
+        </div>
+
         <div class="result">
             <h2>Estimated value of \( \pi \): <span id="pi-estimate">0.00</span></h2>
         </div>
