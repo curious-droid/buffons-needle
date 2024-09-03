@@ -86,7 +86,7 @@ h2 {
     position: absolute;
     top: 100%; /* Position the explanation just below the container */
     left: 0;
-    transform: translateY(100px); /* Add some space below the container */
+    transform: translateY(200px); /* Add some space below the container */
     padding-bottom: 50px; /* Add extra padding at the bottom */
 }
 
